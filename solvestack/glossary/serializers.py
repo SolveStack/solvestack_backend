@@ -7,7 +7,4 @@ class TermSerializer(serializers.ModelSerializer):
     class Meta:
         model = Term
         fields = ["id", "name", "definition"]
-        read_only_fields = [
-            "id",
-        ]
-
+        read_only_fields = ["id"]

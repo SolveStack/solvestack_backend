@@ -9,4 +9,3 @@ class TermViewSet(viewsets.ModelViewSet):
     queryset = Term.objects.all()
     serializer_class = TermSerializer
     filter_class = TermsFilter
-
