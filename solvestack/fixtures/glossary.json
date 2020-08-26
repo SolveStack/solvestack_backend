@@ -1,0 +1,18 @@
+[
+{
+  "model": "glossary.term",
+  "pk": "6LWr7wMsmk6rdgvoA9W3dG",
+  "fields": {
+    "name": "frontend",
+    "definition": "presentation layer"
+  }
+},
+{
+  "model": "glossary.term",
+  "pk": "8JdHcDARgHG9H6CHJEYCwD",
+  "fields": {
+    "name": "backend",
+    "definition": "business logic and database access layer"
+  }
+}
+]
