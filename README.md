@@ -15,3 +15,9 @@ pip3 install -r requirements.txt
 python3 manage.py migrate
 python3 manage.py loaddata solvestack/fixtures/glossary.json
 ```
+
+To start the backend:
+```bash
+source env/bin/activate
+python3 manage.py runserver
+```
