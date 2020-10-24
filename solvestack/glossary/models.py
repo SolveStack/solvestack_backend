@@ -7,3 +7,9 @@ class Term(models.Model):
     id = ShortUUIDField(primary_key=True, editable=False)
     name = models.CharField(max_length=80)
     definition = models.TextField()
+
+class StackNode(models.Model):
+    id = ShortUUIDField(primary_key=True, editable=False)
+    name = models.CharField(max_length=80)
+    definition = models.TextField()
+    similar_tech = models.TextField()
