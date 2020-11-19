@@ -8,8 +8,8 @@ class Term(models.Model):
     name = models.CharField(max_length=80)
     definition = models.TextField()
 
-class StackNode(models.Model):
+class TechnologyNode(models.Model):
     id = ShortUUIDField(primary_key=True, editable=False)
     name = models.CharField(max_length=80)
-    definition = models.TextField()
+    definition = models.CharField(max_length=255)
     similar_tech = models.TextField()

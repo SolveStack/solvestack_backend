@@ -83,9 +83,9 @@ WSGI_APPLICATION = "solvestack.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'solvestack_docker_1',
-        'USER': 'solvestack_docker_1_user',
-        'PASSWORD': 'solvestack',
+        'NAME': os.environ.get('POSTGRES_DB'),
+        'USER': os.environ.get('POSTGRES_USER'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
         'HOST': 'db',
         'PORT': '5432',
     }

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from solvestack.glossary.models import Term, StackNode
+from solvestack.glossary.models import Term, TechnologyNode
 
 
 class TermSerializer(serializers.ModelSerializer):
@@ -9,8 +9,8 @@ class TermSerializer(serializers.ModelSerializer):
         fields = ["id", "name", "definition"]
         read_only_fields = ["id"]
 
-class StackNodeSerializer(serializers.ModelSerializer):
+class TechnologyNodeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = StackNode
+        model = TechnologyNode
         fields = ["id", "name", "definition", "similar_tech"]
         read_only_fields = ["id"]
