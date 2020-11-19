@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='StackNode',
+            name='TechnologyNode',
             fields=[
                 ('id', django_extensions.db.fields.ShortUUIDField(blank=True, editable=False, primary_key=True, serialize=False)),
                 ('name', models.CharField(max_length=80)),
