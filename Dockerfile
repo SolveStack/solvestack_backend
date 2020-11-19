@@ -1,7 +1,6 @@
 # The base image we want to inherit from
 FROM python:3
 ENV PYTHONUNBUFFERED 1
-ARG ENV=dev-requirements
 
 RUN mkdir /solvestack
 WORKDIR /solvestack
@@ -11,7 +10,7 @@ ADD ./requirements requirements
 
 # Install the pip requirements file depending on 
 # the uncommitted .env file passed in when starting build.
-RUN pip install -Ur requirements/$ENV.txt
+RUN pip install -Ur requirements/requirements.txt
 
 # Copy the rest of our application.
 COPY . .

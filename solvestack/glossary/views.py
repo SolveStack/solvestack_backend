@@ -13,4 +13,3 @@ class TermViewSet(viewsets.ModelViewSet):
 class StackNodeViewSet(viewsets.ModelViewSet):
     queryset = StackNode.objects.all()
     serializer_class = StackNodeSerializer
-    # filter_class = TermsFilter
