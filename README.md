@@ -1,5 +1,25 @@
 # solvestack_backend
 
+## Docker
+Make sure to run these commands from the root of the project.
+
+### Initial setup
+`docker-compose up --build`
+(press ctrl+c after initial build and servers are running)s
+`docker-compose run --service-ports web python manage.py migrate`
+`docker-compose run --service-ports web python manage.py createsuperuser`
+
+All done!
+
+### Running/Stopping
+Start:
+`docker-compose up --build`
+
+End all processes:
+`docker-compose down  --remove-orphans`
+
+## Run it Locally (w/o Docker)
+
 First time?
 
 ```bash
@@ -21,22 +41,3 @@ To start the backend:
 source env/bin/activate
 python3 manage.py runserver
 ```
-
-## Docker
-Make sure to run these commands from the root of the project.
-
-### Initial setup
-`docker-compose up --build`
-(press ctrl+c after initial build and servers are running)
-`docker-compose run --service-ports web python manage.py makemigrations`
-`docker-compose run --service-ports web python manage.py migrate`
-`docker-compose run --service-ports web python manage.py createsuperuser`
-
-All done!  
-
-### Running/Stopping
-Start:
-`docker-compose up --build`
-
-End all processes:
-`docker-compose down  --remove-orphans`
