@@ -15,8 +15,8 @@ class Migration(migrations.Migration):
             name='TechnologyNode',
             fields=[
                 ('id', django_extensions.db.fields.ShortUUIDField(blank=True, editable=False, primary_key=True, serialize=False)),
-                ('name', models.CharField(max_length=80)),
-                ('definition', models.TextField()),
+                ('name', models.CharField(max_length=255)),
+                ('definition', models.CharField(max_length=255)),
                 ('similar_tech', models.TextField()),
             ],
         ),
