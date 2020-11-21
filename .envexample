@@ -1,0 +1,3 @@
+POSTGRES_DB=solvestack_docker_1
+POSTGRES_USER=solvestack_docker_1_user
+POSTGRES_PASSWORD=solvestack
