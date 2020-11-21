@@ -8,7 +8,7 @@ WORKDIR /solvestack
 # using ADD with the requirements (vs copy) makes use of caching to speed up consecutive builds
 ADD ./requirements requirements
 
-# Install the pip requirements file depending on 
+# Install the pip requirements file depending on
 # the uncommitted .env file passed in when starting build.
 RUN pip install -Ur requirements/requirements.txt
 
