@@ -5,9 +5,9 @@ Make sure to run these commands from the root of the project.
 
 ### Initial setup
 `docker-compose up --build`
-(press ctrl+c after initial build and servers are running)s
-`docker-compose run --service-ports web python manage.py migrate`
-`docker-compose run --service-ports web python manage.py createsuperuser`
+After initial build and servers are running, in a separate terminal window run the following:
+`docker-compose run web python manage.py migrate`
+`docker-compose run web python manage.py createsuperuser`
 
 All done!
 
