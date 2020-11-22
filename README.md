@@ -4,6 +4,7 @@
 Make sure to run these commands from the root of the project.
 
 ### Initial setup
+If you haven't created an .env file go ahead and make one from the example file:
 `cp .envexample .env`
 
 Make sure Docker is running, then do the following steps:
@@ -37,8 +38,7 @@ On fresh updates, do the following:
 
 ```bash
 source env/bin/activate
-pip3 install -r dev-requirements.txt
-pip3 install -r requirements.txt
+pip3 install -r requirements/requirements.txt
 python3 manage.py migrate
 python3 manage.py loaddata solvestack/fixtures/glossary.json
 ```

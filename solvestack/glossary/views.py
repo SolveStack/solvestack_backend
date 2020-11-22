@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 
-from .serializers import TermSerializer, TechnologyNodeSerializer
-from .models import Term, TechnologyNode
+from .serializers import TermSerializer, TechnologyNodeSerializer, StackSerializer
+from .models import Term, TechnologyNode, Stack
 from .filters import TermsFilter
 
 
@@ -13,3 +13,7 @@ class TermViewSet(viewsets.ModelViewSet):
 class TechnologyNodeViewSet(viewsets.ModelViewSet):
     queryset = TechnologyNode.objects.all()
     serializer_class = TechnologyNodeSerializer
+
+class StackViewSet(viewsets.ModelViewSet):
+    queryset = Stack.objects.all()
+    serializer_class = StackSerializer
